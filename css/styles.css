@@ -37,8 +37,19 @@ body {
     outline: 1px solid greenyellow;
 }
 
+h1, 
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -108,10 +119,15 @@ a {
 /* Перша секція з кнопкою */
 
 .advertis-section {
-background-color: var(--dark-bcg-color);
+    background-color: var(--dark-bcg-color);
+    text-align: center;
 }
 
 .advertisement {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -160,8 +176,14 @@ background-color: var(--dark-bcg-color);
     margin: -1px;
 }
 
+.benefits-section {
+    margin-top: 94px;   /*заменить потом на мb в верхней секции*/
+    margin-bottom: 94px;
+}
+
 .benefit-header {
-    
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -176,8 +198,13 @@ background-color: var(--dark-bcg-color);
 }
 
 /* Секція з галерею */
+.directions-section {
+    margin-bottom: 94px;
+}
 
 .directions {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -196,7 +223,19 @@ background-color: var(--dark-bcg-color);
 /* Про команду */
 
 .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--light-bcg-color);
+}
+
+.team {
+    margin-bottom: 50px;
+
+}
+
+.team-list {
+    text-align: center;       /*под вопросом всему списку или каждому ли отдельно*/
 }
 
 .team-person-item {
@@ -220,9 +259,14 @@ background-color: var(--dark-bcg-color);
 
 .footerall {
     background-color: var(--dark-bcg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    
     color: var(--main-light-color);
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -233,6 +277,11 @@ background-color: var(--dark-bcg-color);
 }
 
 .footer-logoaccent {
+
+    display: inline-block;
+    margin-bottom: 20px;
+    
+
     
     color: var(--secondary-text-color);
     font-family: Raleway, sans-serif;
@@ -245,6 +294,7 @@ background-color: var(--dark-bcg-color);
 
 
 .adress {
+
 
     color: var(--main-light-color);
     font-weight: 400;
@@ -269,7 +319,17 @@ background-color: var(--dark-bcg-color);
     color: var(--secondary-text-color);
 }
 
+.contact-item:not(last-child) {
+margin-bottom: 9px;
+}
+
 /* власне портфоліо */
+
+.portfolio-section {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    
+}
 
 .button-pfl {
         border-radius: 4px;
