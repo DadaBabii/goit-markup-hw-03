@@ -17,6 +17,9 @@ html {
     --dark-bcg-color: #2F303A;
     --light-bcg-color: #F5F4FA;
     --main-light-color: #FFFFFF;
+    --border-color: #ECCECE;
+    --card-set-left-margin: 30px;
+    --card-set-bottom-margin: 90px;
     
 }
 
@@ -45,6 +48,11 @@ p {
     padding: 0;
 
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .list {
     list-style: none;
@@ -64,7 +72,10 @@ a {
 }
 
 .head-block {
+
+
     background-color: var(--main-light-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logoaccent {
@@ -102,8 +113,8 @@ a {
 
 .nav .nav-list {
     display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     color: var(--main-text-color);
     text-decoration: none;
@@ -149,6 +160,9 @@ a {
 /* Перша секція з кнопкою */
 
 .advertis-section {
+
+
+    
     background-color: var(--dark-bcg-color);
     text-align: center;
 }
@@ -156,6 +170,7 @@ a {
 .advertisement {
     margin-top: 0;
     margin-bottom: 30px;
+
     
 
     font-weight: 900;
@@ -165,6 +180,8 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-light-color);
+
+    
             
 }
 
@@ -237,6 +254,22 @@ a {
 }
 
 /* Секція з галерею */
+
+.card-set {
+    display: flex;    
+    justify-content: center;
+    margin-left:(-1 * var(--card-set-left-margin));
+    margin-bottom: (-1 * var(--card-set-bottom-margin));
+}
+
+.card-set>.item {
+    flex-basis: calc(100/3-var (--card-set-left-margin));
+    margin-left: var(--card-set-left-margin);
+    margin-bottom: var(--card-set-bottom-margin);
+}
+
+
+
 .directions-section {
     margin-bottom: 94px;
 }
@@ -251,13 +284,7 @@ a {
    
 }
 
-.team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
 
-}
 
 /* Про команду */
 
@@ -269,12 +296,43 @@ a {
 }
 
 .team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
     margin-bottom: 50px;
 
 }
 
+
+.card-thumb {
+    outline: 1px solid violet;
+}
 .team-list {
-    text-align: center;       /*под вопросом всему списку или каждому ли отдельно*/
+    display: flex;
+    
+    margin-left:(-1 * var(--card-set-left-margin));
+    margin-bottom: (-1 * var(--card-set-bottom-margin));
+}
+
+.team-list>.item {
+    flex-basis: calc(100% / 4 - var(--card-set-left-margin));
+    margin-left: var(--card-set-left-margin);
+    margin-bottom: var(--card-set-bottom-margin);
+
+}
+
+
+.card-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
 }
 
 .team-person-item {
@@ -282,6 +340,8 @@ a {
 }
 
 .team-person-name {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -371,6 +431,8 @@ margin-bottom: 9px;
 }
 
 .button-list {
+    margin-bottom: 50px;
+
     display: flex;
     justify-content: center;
 }
@@ -433,7 +495,33 @@ margin-bottom: 9px;
 
 
 /* Галерея */
+.galery-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-left-margin));
+    margin-top: calc(-1 * var(--card-set-bottom-margin));
+}
+
+.galery-list>.item {
+    flex-basis: calc(100% / 3 - var(--card-set-left-margin));
+    margin-left: var(--card-set-left-margin);
+    margin-top: var(--card-set-bottom-margin);
+
+    
+}
+
+.galery-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: start;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
 .galery-header {
     margin-bottom: 4px;
 

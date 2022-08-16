@@ -41,8 +41,10 @@
     <main>
         <!-- Перша секція-->
         <section class="advertis-section">
-            <h1 class="advertisement">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+        <div class="container">
+                <h1 class="advertisement">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="button">Замовити послугу</button>
+        </div>
         </section>
 
         <!--Секція про переваги-->
@@ -86,7 +88,7 @@
                 <h2 class="directions">
                     Чим ми займаємося
                 </h2>
-                <ul class="direction-list list">
+                <ul class="card-set list">
                     <li class="item"><img src="./images/box1.jpg" alt="друкування на клавіатурі" width="370" /></li>
                     <li class="item"><img src="./images/box2.jpg" alt="розглядання гаджетів" width="370" /></li>
                     <li class="item"><img src="./images/box3.jpg" alt="лаптоп" width="370" /></li>
@@ -98,28 +100,55 @@
         <section class="team-section">
             <div class="container">
                 <h2 class="team">Наша команда</h2>
+                
                 <ul class="team-list list">
-                    <li class="team-person-item">
-                        <img class="team-person-image" src="./images/img(i).jpg" alt="чоловік Ігор" width="270">
-                        <h3 class="team-person-name"> 
-                            Ігор Дем'яненко
-                        </h3>
-                        <p class="team-person-job">Product Designer</p>
+
+                    <li class="item card">
+                        <div class="card-thumb">
+                            <img class="team-person-image" src="./images/img(i).jpg" alt="чоловік Ігор" width="270">
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="team-person-name">Ігор Дем'яненко</h3>
+                            <p class="team-person-job">Product Designer</p>
+                        </div>
+                        
                     </li>
-                    <li class="team-person-item">
-                        <img class="team-person-image" src="./images/img(o).jpg" alt="жінка Ольга" width="270">
-                        <h3 class="team-person-name">Ольга Репіна</h3>
-                        <p class="team-person-job">Frontend Developer</p>
+                    
+                    <li class="item card">
+                        <div class="card-thumb">
+                            <img class="team-person-image" src="./images/img(o).jpg" alt="жінка Ольга" width="270">
+                        </div>
+                       
+                        <div class="card-content">
+                            <h3 class="team-person-name">Ольга Репіна</h3>
+                            <p class="team-person-job">Frontend Developer</p>
+                        </div>
+                        
                     </li>
-                    <li class="team-person-item">
-                        <img class="team-person-image" src="./images/img(n).jpg" alt="Чоловік Микола" width="270">
-                        <h3 class="team-person-name">Микола Тарасов</h3>
-                        <p class="team-person-job">Marketing</p>
+                    
+                    <li class="item card">
+                        <div class="card-thumb">
+                            <img class="team-person-image" src="./images/img(n).jpg" alt="Чоловік Микола" width="270">
+                        </div>
+                       
+                        <div class="card-content">
+                            <h3 class="team-person-name">Микола Тарасов</h3>
+                            <p class="team-person-job">Marketing</p>
+                        </div>
+                        
                     </li>
-                    <li class="team-person-item">
+                  
+                    <li class="item card">
+                        <div class="card-thumb">
                         <img class="team-person-image" src="./images/img(m).jpg" alt="чоловік Михайло" width="270">
-                        <h3 class="team-person-name">Михайло Єрмаков</h3>
-                        <p class="team-person-job">UI Designer</p>
+                        </div>
+                     
+                        <div class="card-content">
+                            <h3 class="team-person-name">Михайло Єрмаков</h3>
+                            <p class="team-person-job">UI Designer</p>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
