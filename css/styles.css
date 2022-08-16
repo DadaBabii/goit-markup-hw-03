@@ -58,6 +58,11 @@ a {
 
 /* Header */
 
+.flex-header {
+    display: flex;
+    align-items: center;
+}
+
 .head-block {
     background-color: var(--main-light-color);
 }
@@ -83,9 +88,23 @@ a {
     line-height: 1.19;
 }
 
+.nav {
+    display: flex;
+    margin-left: 93px;
+   
+}
+.nav .item + .item {
+    margin-left: 40px;
+    background-color: violet;
+}
+
 
 
 .nav .nav-list {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
     color: var(--main-text-color);
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -98,6 +117,17 @@ a {
 .nav .nav-list:hover,
 .nav .nav-list:focus {
     color: var(--secondary-text-color);
+}
+
+.social-links {
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.social-links .item + .item {
+    margin-left: 50px;
+    background-color: rgb(9, 90, 29);
 }
 
 .social-links .link {
@@ -328,7 +358,7 @@ margin-bottom: 9px;
 .portfolio-section {
     margin-top: 94px;
     margin-bottom: 94px;
-    
+
 }
 
 .button-pfl {
@@ -385,6 +415,8 @@ margin-bottom: 9px;
 /* Галерея */
 
 .galery-header {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
