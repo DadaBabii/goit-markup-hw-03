@@ -271,7 +271,7 @@ a {
 
 
 .directions-section {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .directions {
@@ -423,8 +423,8 @@ margin-bottom: 9px;
 /* власне портфоліо */
 
 .portfolio-section {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
