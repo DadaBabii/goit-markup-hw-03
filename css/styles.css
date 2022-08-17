@@ -18,8 +18,8 @@ html {
     --light-bcg-color: #F5F4FA;
     --main-light-color: #FFFFFF;
     --border-color: #ECCECE;
-    --card-set-left-margin: 30px;
-    --card-set-bottom-margin: 90px;
+    --margin30: 30px;
+    --padding94: 94px;
     
 }
 
@@ -142,6 +142,9 @@ a {
 }
 
 .social-links .link {
+    padding-top: 32px;
+    padding-bottom: 32px
+
     color: var(--light-text-color);
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -160,7 +163,8 @@ a {
 /* Перша секція з кнопкою */
 
 .advertis-section {
-
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     
     background-color: var(--dark-bcg-color);
@@ -168,7 +172,10 @@ a {
 }
 
 .advertisement {
+    width: 696px;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     
@@ -198,6 +205,7 @@ a {
     color: var(--main-light-color);
     background-color: var(--secondary-text-color);
     border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
 }
 
@@ -224,13 +232,17 @@ a {
 }
 
 .benefits-section {
-    padding-top: 94px;   
-    padding-bottom: 94px;
+    padding-top: var(--padding94);   
+    padding-bottom: var(--padding94);
 }
 
 .benefits-list {
     display: flex;
     
+}
+
+.benefits-list .item {
+    width: 270px;
 }
 
 .benefits-list .item + .item {
@@ -258,20 +270,20 @@ a {
 .card-set {
     display: flex;    
     justify-content: center;
-    margin-left:(-1 * var(--card-set-left-margin));
-    margin-bottom: (-1 * var(--card-set-bottom-margin));
+    margin-left:(-1 * var(--margin30));
+    margin-bottom: (-1 * var(--margin30));
 }
 
 .card-set>.item {
-    flex-basis: calc(100/3-var (--card-set-left-margin));
-    margin-left: var(--card-set-left-margin);
-    margin-bottom: var(--card-set-bottom-margin);
+    flex-basis: calc(100/3 - var(--margin30));
+    margin-left: var(--margin30);
+    margin-bottom: var(--margin30);
 }
 
 
 
 .directions-section {
-    padding-bottom: 94px;
+    padding-bottom: var(--padding94);
 }
 
 .directions {
@@ -289,8 +301,8 @@ a {
 /* Про команду */
 
 .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
 
     background-color: var(--light-bcg-color);
 }
@@ -308,15 +320,14 @@ a {
 
 .team-list {
     display: flex;
-    
-    margin-left:(-1 * var(--card-set-left-margin));
-    margin-bottom: (-1 * var(--card-set-bottom-margin));
+    margin-left:(-1 * var(--margin30));
+    margin-bottom: (-1 * var(--margin30));
 }
 
 .team-list>.item {
-    flex-basis: calc(100% / 4 - var(--card-set-left-margin));
-    margin-left: var(--card-set-left-margin);
-    margin-bottom: var(--card-set-bottom-margin);
+    flex-basis: calc(100% / 4 - var(--margin30));
+    margin-left: var(--margin30);
+    margin-bottom: var(--margin30);
 
 }
 
@@ -324,7 +335,11 @@ a {
 .card-content {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
+
+    background-color: var(--main-light-colorgalery-text);
 }
 
 .card {
@@ -416,15 +431,15 @@ a {
     color: var(--secondary-text-color);
 }
 
-.contact-item:not(last-child) {
+.contact-item:not(:last-child) {
 margin-bottom: 9px;
 }
 
 /* власне портфоліо */
 
 .portfolio-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
 
 }
 
@@ -463,6 +478,7 @@ margin-bottom: 9px;
     color: var(--main-light-color);
     background-color: var(--secondary-text-color);
     border-color: var(--secondary-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
 
@@ -488,6 +504,7 @@ margin-bottom: 9px;
     color: var(--main-light-color);
     background-color: var(--secondary-text-color);
     border: 1px solid var(--secondary-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -500,14 +517,14 @@ margin-bottom: 9px;
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-left-margin));
-    margin-top: calc(-1 * var(--card-set-bottom-margin));
+    margin-left: calc(-1 * var(--margin30));
+    margin-top: calc(-1 * var(--margin30));
 }
 
 .galery-list>.item {
-    flex-basis: calc(100% / 3 - var(--card-set-left-margin));
-    margin-left: var(--card-set-left-margin);
-    margin-top: var(--card-set-bottom-margin);
+    flex-basis: calc(100% / 3 - var(--margin30));
+    margin-left: var(--margin30);
+    margin-top: var(--margin30);
 
     
 }
@@ -515,6 +532,8 @@ margin-bottom: 9px;
 .galery-text {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
     text-align: start;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
