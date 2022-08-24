@@ -130,6 +130,10 @@ a {
     color: var(--secondary-text-color);
 }
 
+.link {
+    display: inline-block;
+}
+
 .social-links {
     display: flex;
     margin-left: auto;
@@ -211,9 +215,10 @@ a {
 
 .button:hover,
 .button:focus {
-    color: var(--main-text-color);
-    background-color: var(--light-bcg-color);
-    border-color: var(--light-bcg-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    border-color: transparent;;
 }
 
 /* Cекція про переваги */
@@ -270,8 +275,8 @@ a {
 .card-set {
     display: flex;    
     justify-content: center;
-    margin-left:(-1 * var(--margin30));
-    margin-bottom: (-1 * var(--margin30));
+    margin-left: calc(-1 * var(--margin30));
+    margin-bottom: calc(-1 * var(--margin30));
 }
 
 .card-set>.item {
@@ -320,8 +325,8 @@ a {
 
 .team-list {
     display: flex;
-    margin-left:(-1 * var(--margin30));
-    margin-bottom: (-1 * var(--margin30));
+    margin-left: calc(-1 * var(--margin30));
+    margin-bottom: calc(-1 * var(--margin30));
 }
 
 .team-list>.item {
